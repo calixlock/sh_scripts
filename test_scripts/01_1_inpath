@@ -1,16 +1,16 @@
 #!/bin/bash
-# in_path : 특정프로그램 유효한지 확인
+# inpath--특정프로그램 유효한지 확인
 in_path(){
   cmd=$1  
   ourpath=$2  
   result=1
-  oldIFS=$oldIFS 
+  oldIFS=$IFS 
   IFS=":"
   
-  for directory in "$ourpath"
+  for directory in $ourpath
   do
     if [ -x $directory/$cmd ] ; then
-      result 0 # 명령어 발견
+      result=0 # 명령어 발견시
     fi
   done
 
@@ -31,3 +31,19 @@ checkForCmdInPath(){
     fi
   fi
 }
+
+# 결과
+if [ $# -ne 1 ] ; then
+  echo "Usage: $0 command" >&2
+  exit 1
+fi
+
+checkForCmdInPath "$1"
+case $? in
+  0 ) echo "$1 found in PATH" ;;
+  1 ) echo "$1 not found or not excutable" ;;
+  2 ) echo "$1 not found in PATH" ;;
+esac
+
+exit 0
+  

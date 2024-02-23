@@ -1,0 +1,7 @@
+#!/bin/bash
+# 01_1_inpath 스크립트 실행
+bash ./01_1_inpath echo
+
+bash ./01_1_inpath MrEcho
+
+bash ./01_1_inpath /usr/bin/MrEcho

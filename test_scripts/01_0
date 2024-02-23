@@ -1,0 +1,8 @@
+#!/bin/bash
+# CMD bash 01_0
+
+var="0123456789abcde"
+echo ${var:5}
+echo ${var:7:3}
+echo ${var:0:1}
+## test용
