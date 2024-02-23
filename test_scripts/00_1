@@ -1,0 +1,7 @@
+# sh 001 : 쉘 실행 명령어로 실행필요
+#!/bin/bash
+# shebang을 통해 /bin/bash를 호출하므로 CMD에 sh 호출 없이 실행가능 
+# 단, chmod +x 권한 필요  (x: exec / all : +x / user : u+x / group : g+x / other o+x )
+echo "hi"
+echo $(which neqn)
+cat $(which neqn)
