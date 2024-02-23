@@ -1,8 +1,12 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 
-# for examples
+# 스크립트 관련 path 설정 : test_scripts에 있는 스크립트들 bash명령으로 호출 가능 
+# export PATH="/home/calixlock/test_scripts/:$PATH"
+export PATH="$HOME/test_scripts/:$PATH"
 
+
+# for examples
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
