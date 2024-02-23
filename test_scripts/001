@@ -1,4 +1,6 @@
 # sh 001 : 쉘 실행 명령어로 실행필요
+#!/bin/bash
+# 뱅을 이용하면 sh 호출 없이 실행가능 // 단, chmod +x 권한 필요
 echo "hi"
 echo $(which neqn)
 cat $(which neqn)
