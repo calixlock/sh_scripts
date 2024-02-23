@@ -1,0 +1,3 @@
+echo "hi"
+echo $(which neqn)
+cat $(which neqn)
