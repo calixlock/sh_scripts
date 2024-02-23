@@ -1,3 +1,4 @@
+# sh 001 : 쉘 실행 명령어로 실행필요
 echo "hi"
 echo $(which neqn)
 cat $(which neqn)
