@@ -1,0 +1,7 @@
+# ignore files
+.cache
+.v*
+.motd_shown
+.bash_history
+.bash_logout
+.profile
