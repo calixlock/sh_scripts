@@ -1,5 +1,6 @@
 #!/bin/bash
-# 01_1_inpath 스크립트 실행
+# 01_1_inpath 스크립트 실행 결과 출력
+
 bash ./01_1_inpath echo
 
 bash ./01_1_inpath MrEcho

@@ -4,5 +4,17 @@
 var="0123456789abcde"
 echo ${var:5}
 echo ${var:7:3}
+# ${varName:indexStart:size}
 echo ${var:0:1}
+# {# : 첫 번째 인스턴스 부터 삭제 } 
+# {? : 문자수를 ? 갯수로 표현한다}
+echo ${var#?}
+echo ${var#??}
+# ${var%pattern} : var에서 pattern(문자열의 중간부터 끝부분이 동일)을 제거하고 나머지 문자열 생성
+echo ${var%"89abcde"}
+
+# 변수의 첫 부분 출력
+echo ${var%${var#?}}
+echo ${var} | cut -c1
+
 ## test용
